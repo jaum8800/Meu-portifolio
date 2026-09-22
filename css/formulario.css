@@ -1,0 +1,80 @@
+.form-contato {
+  background: rgba(16, 16, 20, 0.55);
+  border: 1px solid rgba(229, 57, 53, 0.22);
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.campo {
+  margin-bottom: 18px;
+}
+
+.campo label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.campo input,
+.campo textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: #141416;
+  border: 1px solid #3a3a40;
+  border-radius: 6px;
+  color: #fff;
+  padding: 12px 14px;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.campo input::placeholder,
+.campo textarea::placeholder {
+  color: #777;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+  outline: none;
+  border-color: #e53935;
+  box-shadow: 0 0 0 2px #e5393544;
+  transform: translateY(-1px);
+}
+
+.campo textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.form-contato button {
+  background: #e53935;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 13px 35px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s ease;
+  box-shadow: 0 10px 20px rgba(229, 57, 53, 0.3);
+}
+
+.form-contato button:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 0 16px #e5393588;
+}
+
+.form-contato button:active {
+  transform: translateY(0) scale(0.98);
+}
+
+@media (max-width: 600px) {
+  .form-contato {
+    padding: 18px 14px;
+  }
+  .form-contato button {
+    width: 100%;
+  }
+}
